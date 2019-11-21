@@ -1,4 +1,4 @@
-#include "Kho_Sach.h"
+﻿#include "Kho_Sach.h"
 void Kho_Sach::Nhap_Lieu()
 { 
 	int i = 1;
@@ -17,6 +17,23 @@ void Kho_Sach::Nhap_Lieu()
 		cout << "Nhap 1 de tiep tuc nhap du lieu va 0 de thoat"; cin >> i;
 	}
 }
+void Kho_Sach::setData()
+{
+	ifstream f;
+	f.open("sach.txt");
+	while (!f.eof())
+	{
+		Sach s;
+		int d; string temp;
+		getline(f, temp); s.setTen_Sach(temp);
+		getline(f, temp); s.setMa_Sach(temp);
+		f >> d; s.setGia(d);
+		getline(f, temp); getline(f, temp); s.setNXB(temp);
+		getline(f,temp); s.setTac_Gia(temp);
+		K.push_back(s);
+	}
+	f.close();
+}
 void Kho_Sach::Xuat_Lieu()
 {
 	int n = K.size();
@@ -30,6 +47,10 @@ void Kho_Sach::Xuat_Lieu()
 		cout << "\nNXB: " << K[i].getNXB();
 		cout << "\nTac Gia: " << K[i].getTac_Gia();
 	}
+}
+Sach Kho_Sach::Seach(string s)
+{
+
 }
 Kho_Sach::Kho_Sach()
 {}

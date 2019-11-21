@@ -45,6 +45,11 @@ string Sach::getTac_Gia()
 	Sach temp;
 }*/
 Sach::Sach() {
+	Ten_Sach = "Default";
+	Ma_Sach = "Default";
+	Gia = 0;
+	NXB = "Default";
+	Tac_Gia = "Default";
 }
 Sach::~Sach() {
 	Ten_Sach = '\0';

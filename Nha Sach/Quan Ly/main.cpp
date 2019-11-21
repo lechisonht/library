@@ -2,6 +2,7 @@
 void main()
 {
 	Kho_Sach D;
-	D.Nhap_Lieu();
+	//D.Nhap_Lieu();
+	D.setData();
 	D.Xuat_Lieu();
 }
