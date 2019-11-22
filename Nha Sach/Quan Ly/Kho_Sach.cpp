@@ -48,9 +48,33 @@ void Kho_Sach::Xuat_Lieu()
 		cout << "\nTac Gia: " << K[i].getTac_Gia();
 	}
 }
-Sach Kho_Sach::Seach(string s)
+Sach Kho_Sach::Seach(string t)
 {
-
+	int d = K.size();
+	for (int i = 0; i < d; i++)
+	{
+		if (t == K[i].getTen_Sach()) return K[i];
+	}
+	Sach a;//khi khong co sach trong kho
+	return a;
+}
+void Kho_Sach::Them(Sach s)
+{
+	K.push_back(s);
+}
+void Kho_Sach::Xoa(string t)
+{
+	int i = 0;
+	int k = 0;
+	for (; i < K.size(); i++)
+	{
+		if (t == K[i].getTen_Sach()) { k = 1; break; }
+	}
+	for (; i < K.size(); i++)
+	{
+		K[i] = K[i + 1];// vi kieu sach k co con tro nen k can cai dat toan tu "="
+	}
+	if (k == 1) K.pop_back();//xoa phan tu cuoi
 }
 Kho_Sach::Kho_Sach()
 {}

@@ -1,2 +1,4 @@
 ﻿  Kho_Sach.cpp
+D:\Năm 2\Kì 1\OOP\library\Nha Sach\Quan Ly\Kho_Sach.cpp(69,11): warning C4018: '<': signed/unsigned mismatch
+D:\Năm 2\Kì 1\OOP\library\Nha Sach\Quan Ly\Kho_Sach.cpp(73,11): warning C4018: '<': signed/unsigned mismatch
   Quan Ly.vcxproj -> D:\Năm 2\Kì 1\OOP\library\Nha Sach\Debug\Quan Ly.exe
