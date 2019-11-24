@@ -9,11 +9,12 @@ private:
 	vector<Don_Hang> HD;
 	int tt;//thanh tien
 public:
-	int getTT();
 	void mua(Kho_Sach D);
+	void thanhTien();
 	void xuathd();
-	void capnhat(Kho_Sach D);
-	void inHD();
+	void xoa();
+	//void capnhat(Kho_Sach D);
+	//void inHD();
 	Hoa_Don();
 	~Hoa_Don();
 };

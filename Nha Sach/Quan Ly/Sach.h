@@ -20,7 +20,10 @@ public:
 	int getGia();
 	string getNXB();
 	string getTac_Gia();
+	void xuat();
 	//Sach getSach();
+	//Sach& operator=(const Sach&);
+	Sach(string ts,string ms,int g,string nxb,string tg);
 	Sach();
 	~Sach();
 };

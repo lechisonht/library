@@ -41,11 +41,7 @@ void Kho_Sach::Xuat_Lieu()
 	for (int i = 0; i < n; i++)
 	{
 		cout << "\nSach " << i + 1 << ": ";
-		cout << "\nTen: " << K[i].getTen_Sach();
-		cout << "\nMa: " << K[i].getMa_Sach();
-		cout << "\nGia: " << K[i].getGia();
-		cout << "\nNXB: " << K[i].getNXB();
-		cout << "\nTac Gia: " << K[i].getTac_Gia();
+		K[i].xuat();
 	}
 }
 Sach Kho_Sach::Seach(string t)
@@ -70,7 +66,7 @@ void Kho_Sach::Xoa(string t)
 	{
 		if (t == K[i].getTen_Sach()) { k = 1; break; }
 	}
-	for (; i < K.size(); i++)
+	for (; i < K.size() - 1; i++)
 	{
 		K[i] = K[i + 1];// vi kieu sach k co con tro nen k can cai dat toan tu "="
 	}
