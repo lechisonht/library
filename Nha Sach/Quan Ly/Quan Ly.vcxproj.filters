@@ -30,6 +30,12 @@
     <ClCompile Include="Hoa_Don.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NXB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tac_Gia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sach.h">
@@ -42,6 +48,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Hoa_Don.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NXB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tac_Gia.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -73,7 +73,9 @@ void Kho_Sach::Xoa(string t)
 	if (k == 1) K.pop_back();//xoa phan tu cuoi
 }
 Kho_Sach::Kho_Sach()
-{}
+{
+
+}
 Kho_Sach::~Kho_Sach()
 {
 	K.clear();

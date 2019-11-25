@@ -1,14 +1,7 @@
-﻿  Don_Hang.cpp
-  Hoa_Don.cpp
+﻿  Hoa_Don.cpp
 D:\Năm 2\Kì 1\OOP\library\Nha Sach\Quan Ly\Hoa_Don.cpp(39,17): warning C4018: '<': signed/unsigned mismatch
 D:\Năm 2\Kì 1\OOP\library\Nha Sach\Quan Ly\Hoa_Don.cpp(43,12): warning C4018: '<': signed/unsigned mismatch
 D:\Năm 2\Kì 1\OOP\library\Nha Sach\Quan Ly\Hoa_Don.cpp(55,20): warning C4018: '<': signed/unsigned mismatch
-  Kho_Sach.cpp
 D:\Năm 2\Kì 1\OOP\library\Nha Sach\Quan Ly\Hoa_Don.cpp(63,20): warning C4018: '<': signed/unsigned mismatch
-D:\Năm 2\Kì 1\OOP\library\Nha Sach\Quan Ly\Kho_Sach.cpp(65,11): warning C4018: '<': signed/unsigned mismatch
-  Sach.cpp
-  main.cpp
-D:\Năm 2\Kì 1\OOP\library\Nha Sach\Quan Ly\Kho_Sach.cpp(69,11): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-D:\Năm 2\Kì 1\OOP\library\Nha Sach\Quan Ly\main.cpp(4,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+D:\Năm 2\Kì 1\OOP\library\Nha Sach\Quan Ly\Hoa_Don.cpp(75,20): warning C4018: '<': signed/unsigned mismatch
   Quan Ly.vcxproj -> D:\Năm 2\Kì 1\OOP\library\Nha Sach\Debug\Quan Ly.exe

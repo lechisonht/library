@@ -127,13 +127,17 @@
     <ClCompile Include="Hoa_Don.cpp" />
     <ClCompile Include="Kho_Sach.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NXB.cpp" />
     <ClCompile Include="Sach.cpp" />
+    <ClCompile Include="Tac_Gia.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Don_Hang.h" />
     <ClInclude Include="Hoa_Don.h" />
     <ClInclude Include="Kho_Sach.h" />
+    <ClInclude Include="NXB.h" />
     <ClInclude Include="Sach.h" />
+    <ClInclude Include="Tac_Gia.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

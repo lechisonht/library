@@ -67,6 +67,24 @@ void Hoa_Don::xuathd()
 	}
 	cout << "\nTong tien: " << tt;
 }
+void Hoa_Don::inHD()
+{
+	ofstream f;
+	f.open("HD1.txt");
+	f << "\n-----HOA DON-----\n";
+	for (int i = 0; i < HD.size(); i++)
+	{
+		f << "\n--DON " << i + 1 << "--\n";
+		f << HD[i].getTen_Sach() << endl;
+		f << HD[i].getMa_Sach() << endl;
+		f << HD[i].getGia() << endl;
+		f << HD[i].getNXB() << endl;
+		f << HD[i].getTac_Gia() << endl;
+		f << HD[i].getsl() << endl;
+	}
+	f << "\nTong tien: " << tt;
+	f.close();
+}
 Hoa_Don::Hoa_Don() {
 	tt = 0;
 }
