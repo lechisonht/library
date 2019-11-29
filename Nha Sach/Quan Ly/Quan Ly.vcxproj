@@ -130,6 +130,10 @@
     <ClCompile Include="NXB.cpp" />
     <ClCompile Include="Sach.cpp" />
     <ClCompile Include="Tac_Gia.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="UserA.cpp" />
+    <ClCompile Include="UserN.cpp" />
+    <ClCompile Include="UserT.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Don_Hang.h" />
@@ -138,6 +142,10 @@
     <ClInclude Include="NXB.h" />
     <ClInclude Include="Sach.h" />
     <ClInclude Include="Tac_Gia.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="UserA.h" />
+    <ClInclude Include="UserN.h" />
+    <ClInclude Include="UserT.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

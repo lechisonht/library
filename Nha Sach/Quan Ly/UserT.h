@@ -4,7 +4,7 @@
 class UserT :
 	public User
 {
-private: 
+private:
 	Tac_Gia T;
 public:
 	UserT();

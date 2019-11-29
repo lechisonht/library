@@ -3,7 +3,7 @@
 using namespace std;
 class User
 {
-private: 
+private:
 	string TK;
 	string MK;
 public:

@@ -16,7 +16,7 @@ string User::getMK()
 	return MK;
 }
 User::User() {}
-User::~User(){
+User::~User() {
 	TK = '\0';
 	MK = '\0';
 }

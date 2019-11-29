@@ -36,6 +36,18 @@
     <ClCompile Include="Tac_Gia.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sach.h">
@@ -54,6 +66,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Tac_Gia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserA.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
