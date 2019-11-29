@@ -1,7 +1,2 @@
-﻿  Hoa_Don.cpp
-D:\Năm 2\Kì 1\OOP\library\Nha Sach\Quan Ly\Hoa_Don.cpp(39,17): warning C4018: '<': signed/unsigned mismatch
-D:\Năm 2\Kì 1\OOP\library\Nha Sach\Quan Ly\Hoa_Don.cpp(43,12): warning C4018: '<': signed/unsigned mismatch
-D:\Năm 2\Kì 1\OOP\library\Nha Sach\Quan Ly\Hoa_Don.cpp(56,20): warning C4018: '<': signed/unsigned mismatch
-D:\Năm 2\Kì 1\OOP\library\Nha Sach\Quan Ly\Hoa_Don.cpp(64,20): warning C4018: '<': signed/unsigned mismatch
-D:\Năm 2\Kì 1\OOP\library\Nha Sach\Quan Ly\Hoa_Don.cpp(76,20): warning C4018: '<': signed/unsigned mismatch
-  Quan Ly.vcxproj -> D:\Năm 2\Kì 1\OOP\library\Nha Sach\Debug\Quan Ly.exe
+﻿  NXB.cpp
+  Quan Ly.vcxproj -> D:\Nam 2\Ki 1\OOP\library\Nha Sach\Debug\Quan Ly.exe

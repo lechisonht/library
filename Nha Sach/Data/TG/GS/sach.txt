@@ -1,0 +1,15 @@
+Conan tap 1
+ab12
+18
+KD
+Gosho
+Conan tap 2
+ab34
+18
+KD
+Gosho
+Conan tap 3
+ab56
+18
+KD
+Gosho

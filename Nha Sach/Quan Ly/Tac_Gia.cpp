@@ -2,7 +2,7 @@
 void Tac_Gia::setDaTa()
 {
 	ifstream f;
-	f.open("sach.txt");
+	f.open("D:/Nam 2/Ki 1/OOP/library/Nha Sach/Data/DLSach/sach.txt");
 	while (!f.eof())
 	{
 		Sach s;
