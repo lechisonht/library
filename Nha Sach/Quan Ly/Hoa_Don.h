@@ -15,6 +15,7 @@ public:
 	void xoa();
 	//void capnhat(Kho_Sach D);
 	void inHD();
+	void HOADON(Kho_Sach D);
 	Hoa_Don();
 	~Hoa_Don();
 };

@@ -9,11 +9,7 @@ void main()
 	D.setData();
 	D.Xuat_Lieu();
 	Hoa_Don HD;
-	HD.mua(D);
-	HD.xuathd();
-	HD.xoa();
-	HD.xuathd();
-	HD.inHD();
+	HD.HOADON(D);
 	/*NXB N("GD");
 	N.setDaTa();
 	N.Xuat_Lieu();

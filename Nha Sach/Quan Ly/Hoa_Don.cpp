@@ -49,6 +49,7 @@ void Hoa_Don::xoa()
 		cout << "Nhap 1 de tiep tuc xoa va phim cac de ket thuc: "; cin >> k;
 		cin.ignore();
 	}
+	thanhTien();
 }
 void Hoa_Don::thanhTien()
 {
@@ -84,6 +85,29 @@ void Hoa_Don::inHD()
 	}
 	f << "\nTong tien: " << tt;
 	f.close();
+}
+void Hoa_Don::HOADON(Kho_Sach D)
+{
+	cout << "\n----TIEN HANH MUA HANG:----";
+	mua(D);
+	xuathd();
+	CONG://cong day lai
+	cout << "1. Xoa DON HANG trong HOA DON.\n" << "2. Them DON HANG moi vao HOA DON\n";
+	int i;
+	cout << "Nhap yeu cau: ";
+	cin >> i;
+	switch (i)
+	{
+	case(1): {xoa(); break; }
+	case(2): {mua(D); break; }
+	default:
+		break;
+	}
+	cout << "Nhap 0 de quay lai chinh sua: ";
+	cin >> i;
+	if (i == 0) goto CONG;
+	xuathd();
+	inHD();
 }
 Hoa_Don::Hoa_Don() {
 	tt = 0;
