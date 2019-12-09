@@ -1,6 +1,7 @@
 #include "Hoa_Don.h"
 void Hoa_Don::mua(Kho_Sach D)
 {
+	cin.ignore();
 	cout << endl;
 	int k = 1;
 	while (k == 1)
@@ -28,6 +29,7 @@ void Hoa_Don::mua(Kho_Sach D)
 }
 void Hoa_Don::xoa()
 {
+	cin.ignore();
 	int k = 1;
 	while (k == 1)
 	{
@@ -68,10 +70,13 @@ void Hoa_Don::xuathd()
 	}
 	cout << "\nTong tien: " << tt;
 }
-void Hoa_Don::inHD()
+void Hoa_Don::inHD(string t)
 {
 	ofstream f;
-	f.open("HD1.txt");
+	string s = "D:/Nam 2/Ki 1/OOP/library/Nha Sach/Data/User/";
+	s += t;
+	s += "/HD1.txt";
+	f.open(s);
 	f << "\n-----HOA DON-----\n";
 	for (int i = 0; i < HD.size(); i++)
 	{
@@ -86,13 +91,14 @@ void Hoa_Don::inHD()
 	f << "\nTong tien: " << tt;
 	f.close();
 }
-void Hoa_Don::HOADON(Kho_Sach D)
+void Hoa_Don::HOADON(Kho_Sach D,string t)
 {
 	cout << "\n----TIEN HANH MUA HANG:----";
 	mua(D);
 	xuathd();
-	CONG://cong day lai
-	cout << "1. Xoa DON HANG trong HOA DON.\n" << "2. Them DON HANG moi vao HOA DON\n";
+CONG://cong day lai
+	cout << "\n---CHINH SUA---";
+	cout << "\n1. Xoa DON HANG trong HOA DON.\n" << "2. Them DON HANG moi vao HOA DON\n";
 	int i;
 	cout << "Nhap yeu cau: ";
 	cin >> i;
@@ -107,7 +113,7 @@ void Hoa_Don::HOADON(Kho_Sach D)
 	cin >> i;
 	if (i == 0) goto CONG;
 	xuathd();
-	inHD();
+	inHD(t);
 }
 Hoa_Don::Hoa_Don() {
 	tt = 0;

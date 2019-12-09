@@ -7,7 +7,7 @@ class UserN :
 private:
 	NXB N;
 public:
-	UserN();
+	UserN(string t);
 	~UserN();
 };
 

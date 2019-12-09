@@ -11,9 +11,9 @@
 #include"UserT.h"
 #include <windows.h>
 void SUDUNG();
-void UADMIN();
-void UNXB(string t);
-void UTG(string t);
-void USER();
-bool DANGNHAP(int &i,string &dt);
+void UADMIN(string tk,string mk);
+void UNXB(string tk, string mk, string t);
+void UTG(string tk, string mk, string t);
+void USER(string tk, string mk,string dt);
+bool DANGNHAP(int& i, string &tk, string &mk, string& dt);
 bool ktdn(string u, string p, int i, string &dt);

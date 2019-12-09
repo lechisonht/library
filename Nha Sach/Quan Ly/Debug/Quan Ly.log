@@ -1,2 +1,7 @@
-﻿  NXB.cpp
+﻿  main.cpp
+  Run.cpp
+D:\Nam 2\Ki 1\OOP\library\Nha Sach\Quan Ly\main.cpp(7,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+D:\Nam 2\Ki 1\OOP\library\Nha Sach\Quan Ly\Run.cpp(76,6): warning C4101: 'n': unreferenced local variable
+  Generating Code...
+D:\Nam 2\Ki 1\OOP\library\Nha Sach\Quan Ly\Run.cpp(123,6): warning C4101: 'n': unreferenced local variable
   Quan Ly.vcxproj -> D:\Nam 2\Ki 1\OOP\library\Nha Sach\Debug\Quan Ly.exe

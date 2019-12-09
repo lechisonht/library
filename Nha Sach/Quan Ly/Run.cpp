@@ -2,34 +2,37 @@
 void SUDUNG()
 {
 	int i;
+	string tk, mk;
 	string dt;
-	if (DANGNHAP(i, dt)) {
+	if (DANGNHAP(i, tk, mk, dt)) {
 		cout << "DANG NHAP THANH CONG.";
 		Sleep(1000);
 		switch (i)
 		{
-		case(1): {UADMIN(); break; }
-		case(2): {UNXB(dt); break; }
+		case(1): {UADMIN(tk,mk); break; }
+		case(2): {UNXB(tk,mk,dt); break; }
+		case(3): {UTG(tk,mk,dt); break; }
+		case(4): {USER(tk,mk,dt); break; }
 		default:
 			break;
 		}
 	}
 	else { cout << "DANG NHAP THAT BAI."; return; }
 }
-void UADMIN()
+void UADMIN(string tk,string mk)
 {
 	Kho_Sach K; 
 	K.setData();
+	UserA UA;
+	UA.setTK(tk);
+	UA.setMK(mk);
 	//K.Xuat_Lieu();
 	int i;
-	Sach temp;
-	string s;
-	int n;
 	reset:
 	system("cls");
 	cout << "-----ADMIN-----" << endl;
 	cout << "Chon thao tac: \n";
-	cout << "1. Them.\n2. Xoa.\n3. Sua.\n4. Thong bao.\5. Khoa Sach.\n"; cin >> i;
+	cout << "1. Them.\n2. Xoa.\n3. Sua.\n4. Thong bao.\n5. Khoa Sach.\n"; cin >> i;
 	switch (i)
 	{
 	case(1): {
@@ -61,13 +64,12 @@ void UADMIN()
 	if (i == 0) goto reset;
 	K.Dong_Bo();
 }
-void UNXB(string t)
+void UNXB(string tk, string mk,string t)
 {
 	Kho_Sach K;
 	K.setData();
 	NXB U(t);
 	U.setDaTa();
-	U.Xuat_Lieu();
 	int i;
 	Sach temp;
 	string s;
@@ -76,7 +78,7 @@ reset:
 	system("cls");
 	cout << "-----NXB: "<<t<<"-----" << endl;
 	cout << "Chon thao tac: \n";
-	cout << "1. Them.\n2. Xoa.\n3. Sua.\n4. Thong bao.\5. Khoa Sach.\n"; cin >> i;
+	cout << "1. Them.\n2. Xoa.\n3. Sua.\n4. Thong bao.\n5. Khoa Sach.\n"; cin >> i;
 	switch (i)
 	{
 	case(1): {
@@ -109,11 +111,64 @@ reset:
 	K.Dong_Bo();
 	U.Dong_Bo();
 }
-void UTG(string t)
+void UTG(string tk, string mk,string t)
 {
-
+	Kho_Sach K;
+	K.setData();
+	Tac_Gia T(t);
+	T.setDaTa();
+	int i;
+	Sach temp;
+	string s;
+	int n;
+reset:
+	system("cls");
+	cout << "-----NXB: " << t << "-----" << endl;
+	cout << "Chon thao tac: \n";
+	cout << "1. Them.\n2. Xoa.\n3. Sua.\n4. Thong bao.\n5. Khoa Sach.\n"; cin >> i;
+	switch (i)
+	{
+	case(1): {
+		cout << "---THEM---\n";
+		T.add(K);
+		break;
+	}
+	case(2): {
+		cout << "---XOA---\n";
+		string temp;
+		cin.ignore();
+		cout << "Nhap Ten cuon sach muon xoa: "; getline(cin, temp); ;
+		T.Xoa(temp);
+		break;
+	}
+	case(3): {
+		cout << "---SUA---\n";
+		string temp;
+		cin.ignore();
+		cout << "Nhap Ten cuon sach muon sua gia: "; getline(cin, temp);
+		T.Sua(temp);
+		break;
+	}
+		   ////Thieu
+	default:
+		break;
+	}
+	cout << "Nhap 0 de quay lai thao tac. "; cin >> i;
+	if (i == 0) goto reset;
+	K.Dong_Bo();
+	T.Dong_Bo();
 }
-bool DANGNHAP(int &i,string &dt)
+void USER(string tk, string mk, string dt)
+{
+	Kho_Sach K;
+	K.setData();
+	Hoa_Don H;
+	//K.Xuat_Lieu();
+	system("cls");
+	cout << "-----USER-----" << endl;
+	H.HOADON(K,dt);
+}
+bool DANGNHAP(int &i,string &tk,string &mk, string &dt)
 {
 	cout << "------DANG NHAP-----\n";
 	cout << "Chon doi tuong: \n1.Admin\n2.NXB\n3.Tac gia\n4.Khach hang\n"; cin >> i;
@@ -141,7 +196,9 @@ bool ktdn(string u, string p, int i,string &dt)
 	{
 		getline(f, t);
 		getline(f, m);
-		if ((u == t) && (p == m)) return true;
+		if ((u == t) && (p == m)) {
+			if (i == 4) dt = t;
+			return true; }
 	}
 	if ((i == 2) || (i == 3))
 		while (!f.eof())
