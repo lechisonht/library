@@ -2,10 +2,10 @@
 #include"Hoa_Don.h"
 #include"NXB.h"
 #include"Tac_Gia.h"
-
+#include"Run.h"
 void main()
 {
-	Kho_Sach D;
+	/*Kho_Sach D;
 	//D.Nhap_Lieu();
 	D.setData();
 	D.Xuat_Lieu();
@@ -17,4 +17,7 @@ void main()
 	Tac_Gia T("Gosho");
 	T.setDaTa();
 	T.Xuat_Lieu();*/
+	//int i; string dt;
+	//DANGNHAP(i,dt);
+	SUDUNG();
 }

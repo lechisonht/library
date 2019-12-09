@@ -128,6 +128,7 @@
     <ClCompile Include="Kho_Sach.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NXB.cpp" />
+    <ClCompile Include="Run.cpp" />
     <ClCompile Include="Sach.cpp" />
     <ClCompile Include="Tac_Gia.cpp" />
     <ClCompile Include="User.cpp" />
@@ -140,6 +141,7 @@
     <ClInclude Include="Hoa_Don.h" />
     <ClInclude Include="Kho_Sach.h" />
     <ClInclude Include="NXB.h" />
+    <ClInclude Include="Run.h" />
     <ClInclude Include="Sach.h" />
     <ClInclude Include="Tac_Gia.h" />
     <ClInclude Include="User.h" />

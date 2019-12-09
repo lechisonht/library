@@ -48,6 +48,9 @@
     <ClCompile Include="UserA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Run.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sach.h">
@@ -78,6 +81,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="UserA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Run.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -34,6 +34,20 @@ void Kho_Sach::setData()
 	}
 	f.close();
 }
+void Kho_Sach::Dong_Bo()
+{
+	ofstream f;
+	f.open("D:/Nam 2/Ki 1/OOP/library/Nha Sach/Data/DLSach/sach.txt");
+	for (int i = 0; i < K.size(); i++)
+	{
+		f << K[i].getTen_Sach() << endl;
+		f << K[i].getMa_Sach() << endl;
+		f << K[i].getGia() << endl;
+		f << K[i].getNXB() << endl;
+		f << K[i].getTac_Gia() << endl;
+	}
+	f.close();
+}
 void Kho_Sach::Xuat_Lieu()
 {
 	int n = K.size();
@@ -54,6 +68,30 @@ Sach Kho_Sach::Seach(string t)
 	Sach a;//khi khong co sach trong kho
 	return a;
 }
+void Kho_Sach::add()
+{
+	Sach s;
+	string temp;
+	int g;
+	cin.ignore();
+	cout << "Nhap Ten: "; 
+	getline(cin, temp); 
+	s.setTen_Sach(temp);
+	cout << "Nhap Ma: "; 
+	getline(cin, temp);
+	s.setMa_Sach(temp);
+	cout << "Nhap Gia: "; 
+	cin >> g;
+	s.setGia(g);
+	cin.ignore();
+	cout << "Nhap NXB: ";
+	getline(cin, temp);
+	s.setNXB(temp);
+	cout << "Nhap Tac Gia: ";
+	getline(cin, temp);
+	s.setTac_Gia(temp);
+	K.push_back(s);
+}
 void Kho_Sach::Them(Sach s)
 {
 	K.push_back(s);
@@ -71,6 +109,18 @@ void Kho_Sach::Xoa(string t)
 		K[i] = K[i + 1];// vi kieu sach k co con tro nen k can cai dat toan tu "="
 	}
 	if (k == 1) K.pop_back();//xoa phan tu cuoi
+}
+void Kho_Sach::Sua(string t)
+{
+	fflush(stdin);
+	for (int i = 0; i < K.size(); i++)
+		if (t == K[i].getTen_Sach())
+		{
+			int g;//gia moi
+			cout << "Nhap Gia moi: "; cin >> g;
+			K[i].setGia(i);
+			return;
+		}
 }
 Kho_Sach::Kho_Sach()
 {
