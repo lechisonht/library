@@ -16,4 +16,5 @@ void UNXB(string tk, string mk, string t);
 void UTG(string tk, string mk, string t);
 void USER(string tk, string mk,string dt);
 bool DANGNHAP(int& i, string &tk, string &mk, string& dt);
+void IB(string t);
 bool ktdn(string u, string p, int i, string &dt);

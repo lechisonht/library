@@ -1,7 +1,6 @@
-﻿  main.cpp
-  Run.cpp
-D:\Nam 2\Ki 1\OOP\library\Nha Sach\Quan Ly\main.cpp(7,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
-D:\Nam 2\Ki 1\OOP\library\Nha Sach\Quan Ly\Run.cpp(76,6): warning C4101: 'n': unreferenced local variable
-  Generating Code...
-D:\Nam 2\Ki 1\OOP\library\Nha Sach\Quan Ly\Run.cpp(123,6): warning C4101: 'n': unreferenced local variable
+﻿  Kho_Sach.cpp
+D:\Nam 2\Ki 1\OOP\library\Nha Sach\Quan Ly\Kho_Sach.cpp(41,20): warning C4018: '<': signed/unsigned mismatch
+D:\Nam 2\Ki 1\OOP\library\Nha Sach\Quan Ly\Kho_Sach.cpp(103,11): warning C4018: '<': signed/unsigned mismatch
+D:\Nam 2\Ki 1\OOP\library\Nha Sach\Quan Ly\Kho_Sach.cpp(107,11): warning C4018: '<': signed/unsigned mismatch
+D:\Nam 2\Ki 1\OOP\library\Nha Sach\Quan Ly\Kho_Sach.cpp(116,20): warning C4018: '<': signed/unsigned mismatch
   Quan Ly.vcxproj -> D:\Nam 2\Ki 1\OOP\library\Nha Sach\Debug\Quan Ly.exe

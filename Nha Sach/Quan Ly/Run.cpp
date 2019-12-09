@@ -56,6 +56,10 @@ void UADMIN(string tk,string mk)
 		K.Sua(temp);
 		break;
 	}
+	case(4): {
+		IB("ADMIN");
+		break;
+	}
 		   ////Thieu
 	default:
 		break;
@@ -100,6 +104,10 @@ reset:
 		cin.ignore();
 		cout << "Nhap Ten cuon sach muon sua gia: "; getline(cin, temp);
 		U.Sua(temp);
+		break;
+	}
+	case(4): {
+		IB(t);
 		break;
 	}
 		   ////Thieu
@@ -149,11 +157,15 @@ reset:
 		T.Sua(temp);
 		break;
 	}
+	case(4): {
+		IB(t);
+		break;
+	}
 		   ////Thieu
 	default:
 		break;
 	}
-	cout << "Nhap 0 de quay lai thao tac. "; cin >> i;
+	cout << "Nhap 0 de quay lai thao tac phim khac de thoat. "; cin >> i;
 	if (i == 0) goto reset;
 	K.Dong_Bo();
 	T.Dong_Bo();
@@ -177,6 +189,30 @@ bool DANGNHAP(int &i,string &tk,string &mk, string &dt)
 	cout << "Password: "; cin >> p;
 	if (ktdn(u, p, i, dt)) return true;
 	return false;
+}
+void IB(string t) {
+	cin.ignore();
+	cout << "Nhap tin nhan: ";
+	string temp;
+	getline(cin, temp);
+	ifstream f;
+	string tk, mk;
+	f.open("D:/Nam 2/Ki 1/OOP/library/Nha Sach/Data/User/User.txt");
+	while (!f.eof())
+	{
+		getline(f, tk);
+		getline(f, mk);
+		string s = "D:/Nam 2/Ki 1/OOP/library/Nha Sach/Data/User/";
+		s += tk;
+		s += "/";
+		s += t;
+		s += ".txt";
+		ofstream f1;
+		f1.open(s);
+		f1 << temp;
+		f1.close();
+	}
+	f.close();
 }
 bool ktdn(string u, string p, int i,string &dt)
 {
